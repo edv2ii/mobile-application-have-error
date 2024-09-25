@@ -1,0 +1,82 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/todos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/todo_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_todo"
+                    android:contentDescription="Icon" />
+
+                <TextView
+                    android:id="@+id/todo_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/todo_icon"
+                    android:layout_marginStart="8dp"
+                    android:text="Todo List"
+                    android:textStyle="bold"
+                    android:textColor="#660033"
+                    android:textSize="18sp" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/arrow_icon"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:src="@drawable/baseline_arrow_forward_ios_24"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"/>-->
+            </RelativeLayout>
+
+            <!-- Details section to show/hide -->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/todo_details"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_marginTop="8dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/todo_date"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="วันที่ 30 ส.ค. เวลา 09:00"-->
+<!--                    android:textColor="#660033"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/todo_desc"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="• เลือกตั้ง"-->
+<!--                    android:textColor="#660033"-->
+<!--                    android:layout_marginTop="4dp" />-->
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
